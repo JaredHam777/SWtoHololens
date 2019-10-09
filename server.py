@@ -49,7 +49,7 @@ async def fileSend(websocket, path):
         print(file + ".stl sent!")
     open(updateFileName, 'w').close()
     
-start_server = websockets.serve(fileSend, '192.168.0.112', 8765)
+start_server = websockets.serve(fileSend, '192.168.0.100', 8765)
 
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()
