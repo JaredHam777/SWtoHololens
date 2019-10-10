@@ -1,7 +1,7 @@
 import asyncio
 import websockets
 
-ipAddress = "192.168.0.100"
+ipAddress = "10.42.0.82"
 port = "8765"
 
 receiveFile = open("file.stl", "wb")
