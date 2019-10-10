@@ -4,8 +4,12 @@
 
 import asyncio
 import websockets
+import socket
 
-ipAddress = "192.168.0.100"
+ipAddress = socket.gethostbyname(socket.gethostname())
+#wireless lan adapter ip4:
+ipAddress = '10.42.0.82'
+print(ipAddress)
 port = 8765
 
 filesToSend = []
